@@ -313,7 +313,7 @@ local function are_installed_2()
 end
 if not are_installed_1() then install_profiles(1) end
 if not are_installed_2() then install_profiles(2) end
-local url = shared.RiseMode and "https://github.com/Donutgaming51/VWRise/" or "https://github.com/Donutgaming51/VoidwareBakup"
+local url = shared.RiseMode and "https://github.com/Donutgaming51/VWRise/" or "https://github.com/Donutgaming51/StraightwareBakup"
 if not shared.VapeDeveloper then 
 	local commit = "main"
 	for i,v in pairs(game:HttpGet(url):split("\n")) do 
@@ -364,7 +364,7 @@ if not shared.VapeDeveloper then
 end
 if not shared.VapeDeveloper then 
 	local commit = "main"
-	for i,v in pairs(game:HttpGet("https://github.com/Donutgaming51/vapevoidware"):split("\n")) do 
+	for i,v in pairs(game:HttpGet("https://github.com/Donutgaming51/straightware"):split("\n")) do 
 		if v:find("commit") and v:find("fragment") then 
 			local str = v:split("/")[5]
 			commit = str:sub(0, str:find('"') - 1)
