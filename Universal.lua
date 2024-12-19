@@ -31,8 +31,8 @@ local isnetworkowner = function(part)
 	end
 	return networkownerswitch <= tick()
 end
-local vapeAssetTable = {["vape/assets/VapeCape.png"] = "rbxassetid://18341361652", ["vape/assets/ArrowIndicator.png"] = "rbxassetid://13350766521"}
-if shared.RiseMode then vapeAssetTable["vape/assets/VapeCape.png"] = "rbxassetid://119886186375437" end
+local vapeAssetTable = {["vape/assets/VapeCape.png"] = "rbxassetid://104478924339917", ["vape/assets/ArrowIndicator.png"] = "rbxassetid://13350766521"}
+if shared.RiseMode then vapeAssetTable["vape/assets/VapeCape.png"] = "rbxassetid://104478924339917" end
 local getcustomasset = getsynasset or getcustomasset or function(location) return vapeAssetTable[location] or "" end
 local queueonteleport = syn and syn.queue_on_teleport or queue_on_teleport or function() end
 local synapsev3 = syn and syn.toast_notification and "V3" or ""
