@@ -855,7 +855,7 @@ VapeLogo.TextStrokeColor3 = Color3.new(255, 255, 255)
 VapeLogo.TextScaled = true
 VapeLogo.BackgroundTransparency = 1
 VapeLogo.TextColor3 = Color3.new(255, 255, 255)
-VapeLogo.Text = "VOIDWARE"
+VapeLogo.Text = "BACONGODS"
 VapeLogo.Name = "Logo"
 VapeLogo.Parent = VapeLogoFrame
 local VapeLogoGradient = Instance.new("UIGradient")
@@ -2222,7 +2222,7 @@ GeneralSettings.CreateButton2({
 })
 local function InfoNotification(title, text, delay)
 	local suc, res = pcall(function()
-		local frame = GuiLibrary.CreateNotification(title or "Voidware", text or "Successfully called function", delay or 7, "assets/InfoNotification.png")
+		local frame = GuiLibrary.CreateNotification(title or "Bacongods", text or "Successfully called function", delay or 7, "assets/InfoNotification.png")
 		return frame
 	end)
     warn(title..": "..text)
@@ -2234,7 +2234,7 @@ local bedwarsID = {
 	lobby = {6872265039}
 }
 local function loadVape()
-	InfoNotification("Voidware", "Loading...this might take 5-10 seconds", 5)
+	InfoNotification("Bacongods", "Loading...this might take 5-10 seconds", 5)
 	--game:GetService("Players").LocalPlayer.GameplayPaused = true
 	if not shared.VapeIndependent then
 		pload("Universal.lua", true)
@@ -2255,7 +2255,7 @@ local function loadVape()
 			fileName1 = "CustomModules/"..CE.."6872265039.lua"
 			fileName2 = "CustomModules/VW6872265039.lua"
 		end
-		--if CE == "CE" then InfoNotification("Voidware", "Backup mode activated!", 3) end 
+		--if CE == "CE" then InfoNotification("Bacongods", "Backup mode activated!", 3) end 
 		--if shared.CheatEngineMode then InfoNotification(fileName1, fileName2, 2) end
 		warn("[CheatEngineMode]: ", tostring(shared.CheatEngineMode))
 		warn("[TestingMode]: ", tostring(shared.TestingMode))
@@ -2300,9 +2300,9 @@ local function loadVape()
 	end
 	--game:GetService("Players").LocalPlayer.GameplayPaused = false
 	if shared.CheatEngineMode then
-		if shared.CheatEngineMode and (not shared.VapeSwitchServers) then InfoNotification("Voidware", "Loaded in Cheat Engine Mode! Some functions might be missing.", 1.5) end
+		if shared.CheatEngineMode and (not shared.VapeSwitchServers) then InfoNotification("Bacongods", "Loaded in Cheat Engine Mode! Some functions might be missing.", 1.5) end
 	else
-		InfoNotification("Voidware", "Successfully loaded Voidware :D", 1.5)
+		InfoNotification("Bacongods", "Successfully loaded Bacongods :D", 1.5)
 	end
 	coroutine.resume(saveSettingsLoop)
 	shared.VapeFullyLoaded = true
