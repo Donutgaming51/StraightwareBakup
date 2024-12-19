@@ -45,7 +45,7 @@ local vapeAssetTable = {
 	["vape/assets/MoreButton1.png"] = "rbxassetid://13350775005",
 	["vape/assets/MoreButton2.png"] = "rbxassetid://13350775731",
 	["vape/assets/MoreButton3.png"] = "rbxassetid://13350776241",
-	["vape/assets/NotificationBackground.png"] = "rbxassetid://13350776706",
+	["vape/assets/NotificationBackground.png"] = "rbxassetid://72040583599079",
 	["vape/assets/NotificationBar.png"] = "rbxassetid://13350777235",
 	["vape/assets/OnlineProfilesButton.png"] = "rbxassetid://13350777717",
 	["vape/assets/PencilIcon.png"] = "rbxassetid://13350778187",
@@ -81,12 +81,12 @@ local vapeAssetTable = {
 	["vape/assets/WarningNotification.png"] = "rbxassetid://13350794868",
 	["vape/assets/WindowBlur.png"] = "rbxassetid://13350795660",
 	["vape/assets/WorldIcon.png"] = "rbxassetid://13350796199",
-	["vape/assets/VapeIcon.png"] = "rbxassetid://13350808582",
+	["vape/assets/VapeIcon.png"] = "rbxassetid://72040583599079",
 	["vape/assets/RenderIcon.png"] = "rbxassetid://13350832775",
-	["vape/assets/VapeLogo1.png"] = "rbxassetid://13350860863",
-	["vape/assets/VapeLogo3.png"] = "rbxassetid://13350872035",
-	["vape/assets/VapeLogo2.png"] = "rbxassetid://13350876307",
-	["vape/assets/VapeLogo4.png"] = "rbxassetid://13350877564"
+	["vape/assets/VapeLogo1.png"] = "rbxassetid://72040583599079",
+	["vape/assets/VapeLogo3.png"] = "rbxassetid://72040583599079",
+	["vape/assets/VapeLogo2.png"] = "rbxassetid://72040583599079",
+	["vape/assets/VapeLogo4.png"] = "rbxassetid://72040583599079"
 }
 if inputService:GetPlatform() ~= Enum.Platform.Windows then
 	--mobile exploit fix
@@ -146,7 +146,7 @@ local function vapeGithubRequest(scripturl)
 				displayErrorPopup("The connection to github is taking a while, Please be patient.")
 			end
 		end)
-		suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VoidwareBakup/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
+		suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/StraightwareBakup/"..readfile("vape/commithash.txt").."/"..scripturl, true) end)
 		if not suc or res == "404: Not Found" then
 			displayErrorPopup("Failed to connect to github : vape/"..scripturl.." : "..res)
 			error(res)
@@ -1989,10 +1989,10 @@ if shared.BACKUPTELEPORTMODE then
 					if isfile('vape/NewMainScript.lua') then
 						loadstring(readfile("vape/NewMainScript.lua"))()
 					else
-						loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+						loadstring(game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/NewMainScript.lua", true))()
 					end
 				else
-					loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+					loadstring(game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/NewMainScript.lua", true))()
 				end
 			]]
 			if shared.VapeDeveloper then
@@ -2042,10 +2042,10 @@ else
 							if isfile('vape/NewMainScript.lua') then
 								loadstring(readfile("vape/NewMainScript.lua"))()
 							else
-								loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+								loadstring(game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/NewMainScript.lua", true))()
 							end
 						else
-							loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()
+							loadstring(game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/NewMainScript.lua", true))()
 						end
 					end
 				]]
