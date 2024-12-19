@@ -393,7 +393,7 @@ local function vapeGithubRequest(scripturl, isImportant)
         end
     end
     local suc, res
-    local url = (scripturl == "MainScript.lua" or scripturl == "GuiLibrary.lua") and shared.RiseMode and "https://raw.githubusercontent.com/Donutgaming51/VWRise/" or "https://raw.githubusercontent.com/Donutgaming51/VoidwareBakup/"
+    local url = (scripturl == "MainScript.lua" or scripturl == "GuiLibrary.lua") and shared.RiseMode and "https://raw.githubusercontent.com/Donutgaming51/VWRise/" or "https://raw.githubusercontent.com/Donutgaming51/StraightwareBakup/"
     suc, res = pcall(function() return game:HttpGet(url..readfile(baseDirectory.."commithash2.txt").."/"..scripturl, true) end)
     if not suc or res == "404: Not Found" then
         if isImportant then
