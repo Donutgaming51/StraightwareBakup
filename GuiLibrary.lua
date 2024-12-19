@@ -922,7 +922,7 @@ if shared.VapeExecuted then
 		windowlogo1.TextScaled = true
 		windowlogo1.BackgroundTransparency = 1
 		windowlogo1.TextColor3 = Color3.new(255, 255, 255)
-		windowlogo1.Text = "VOIDWARE"
+		windowlogo1.Text = "BACONGODS"
 		windowlogo1.Size = UDim2.new(0, 100, 0, 20)
 		windowlogo1.Position = UDim2.new(0, 11, 0, 12)
 		windowlogo1.TextStrokeTransparency = 0
@@ -991,8 +991,8 @@ if shared.VapeExecuted then
 						local reqbody = {
 							["nonce"] = game:GetService("HttpService"):GenerateGUID(false),
 							["args"] = {
-								["invite"] = {["code"] = "voidware"},
-								["code"] = "voidware",
+								["invite"] = {["code"] = "UZhzwu8k8e"},
+								["code"] = "UZhzwu8k8e",
 							},
 							["cmd"] = "INVITE_BROWSER"
 						}
@@ -1027,7 +1027,7 @@ if shared.VapeExecuted then
 				local hoverround3 = Instance.new("UICorner")
 				hoverround3.CornerRadius = UDim.new(0, 4)
 				hoverround3.Parent = hoverbox3
-				setclipboard("https://discord.gg/voidware")
+				setclipboard("https://discord.gg/UZhzwu8k8e")
 				task.wait(1)
 				hoverbox3:Remove()
 			end)
@@ -4191,7 +4191,7 @@ if shared.VapeExecuted then
 					task.spawn(function()
 						repeat task.wait() until (shared.warningNotification or warningNotification)
 						local warningNotification = warningNotification or shared.warningNotification
-						warningNotification("VoidwareWL", "Access granted for "..((argstablemain["Name"] and tostring(argstablemain["Name"])) or "UnknownModule").."["..((argstablemain2["Name"] and tostring(argstablemain2["Name"])) or "Unknown").."Window]", 3)
+						warningNotification("BACONGODSWL", "Access granted for "..((argstablemain["Name"] and tostring(argstablemain["Name"])) or "UnknownModule").."["..((argstablemain2["Name"] and tostring(argstablemain2["Name"])) or "Unknown").."Window]", 3)
 					end)
 				end
 			else allowed = true end
