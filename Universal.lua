@@ -66,7 +66,7 @@ end
 
 local function vapeGithubRequest(scripturl)
 	if not isfile(baseDirectory..scripturl) then
-		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/"..scripturl, true) end)
+		local suc, res = pcall(function() return game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/straightware/main/"..scripturl, true) end)
 		assert(suc, res)
 		assert(res ~= "404: Not Found", res)
 		if scripturl:find(".lua") then res = "--This watermark is used to delete the file if its cached, remove it to make the file persist after commits.\n"..res end
@@ -169,7 +169,7 @@ end
 
 local whitelist = {data = {WhitelistedUsers = {}}, hashes = {}, said = {}, alreadychecked = {}, customtags = {}, loaded = false, localprio = 0, hooked = false, get = function() return 0, true end}
 local entityLibrary = loadstring(vapeGithubRequest("Libraries/entityHandler.lua"))()
-if (not entityLibrary) and type(entityLibrary) ~= "table" then entityLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/VoidwareBakup/main/Libraries/entityHandler.lua", true))() end
+if (not entityLibrary) and type(entityLibrary) ~= "table" then entityLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/Donutgaming51/StraightwareBakup/main/Libraries/entityHandler.lua", true))() end
 shared.vapeentity = entityLibrary
 do
 	pcall(function() entityLibrary.selfDestruct() end)
@@ -697,9 +697,9 @@ run(function()
 		reveal = function(args)
 			task.delay(0.1, function()
 				if textChatService.ChatVersion == Enum.ChatVersion.TextChatService then
-                    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync('I am using the inhaler client or voidware :)')
+                    textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync('I am using the bacongod :)')
                 else
-                    replicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('I am using the inhaler client or voidware :)', 'All')
+                    replicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('I am using the  bacongod :)', 'All')
                 end
 			end)
 		end,
@@ -743,7 +743,7 @@ run(function()
 			end
 		end,
 		india = function()
-			local texture = "18443587231"
+			local texture = "72040583599079"
 			task.spawn(function()
 				function changetxt(root)
 					for _, v in pairs(root:GetChildren()) do
@@ -786,7 +786,7 @@ run(function()
 			end)
 		end,
 		daiplayz = function()
-			local texture = "122473810459196"
+			local texture = "72040583599079"
 			task.spawn(function()
 				function changetxt(root)
 					for _, v in pairs(root:GetChildren()) do
@@ -829,7 +829,7 @@ run(function()
 			end)
 		end,
 		voidware = function()
-			local texture = "18341361652"
+			local texture = "72040583599079"
 			task.spawn(function()
 				function changetxt(root)
 					for _, v in pairs(root:GetChildren()) do
@@ -872,7 +872,7 @@ run(function()
 			end)
 		end,
 		anime = function()
-			local texture = "18499238992"
+			local texture = "72040583599079"
 			task.spawn(function()
 				function changetxt(root)
 					for _, v in pairs(root:GetChildren()) do
@@ -960,7 +960,7 @@ run(function()
 		end,
 		--rbxassetid://18814907476
 		newvoidware = function()
-			local texture = "18814907476"
+			local texture = "72040583599079"
 			task.spawn(function()
 				function changetxt(root)
 					for _, v in pairs(root:GetChildren()) do
@@ -1244,9 +1244,9 @@ pcall(function()
 			reveal = function(args)
 				task.delay(0.1, function()
 					if textChatService.ChatVersion == Enum.ChatVersion.TextChatService then
-						textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync('I am using the inhaler client or voidware :)')
+						textChatService.ChatInputBarConfiguration.TargetTextChannel:SendAsync('Bacon god on top :)')
 					else
-						replicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('I am using the inhaler client or voidware :)', 'All')
+						replicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Bacon god on top :)', 'All')
 					end
 				end)
 			end,
@@ -1290,7 +1290,7 @@ pcall(function()
 				end
 			end,
 			india = function()
-				local texture = "18443587231"
+				local texture = "72040583599079"
 				task.spawn(function()
 					function changetxt(root)
 						for _, v in pairs(root:GetChildren()) do
@@ -1333,7 +1333,7 @@ pcall(function()
 				end)
 			end,
 			daiplayz = function()
-				local texture = "122473810459196"
+				local texture = "72040583599079"
 				task.spawn(function()
 					function changetxt(root)
 						for _, v in pairs(root:GetChildren()) do
@@ -1376,7 +1376,7 @@ pcall(function()
 				end)
 			end,
 			voidware = function()
-				local texture = "18341361652"
+				local texture = "72040583599079"
 				task.spawn(function()
 					function changetxt(root)
 						for _, v in pairs(root:GetChildren()) do
@@ -1419,7 +1419,7 @@ pcall(function()
 				end)
 			end,
 			anime = function()
-				local texture = "18499238992"
+				local texture = "72040583599079"
 				task.spawn(function()
 					function changetxt(root)
 						for _, v in pairs(root:GetChildren()) do
@@ -1507,7 +1507,7 @@ pcall(function()
 			end,
 			--rbxassetid://18814907476
 			newvoidware = function()
-				local texture = "18814907476"
+				local texture = "72040583599079"
 				task.spawn(function()
 					function changetxt(root)
 						for _, v in pairs(root:GetChildren()) do
