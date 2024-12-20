@@ -8271,13 +8271,7 @@ run(function()
 				return v, i
 			end
 		end
-		for i,v in next, (AutoToxicPhrases5.ObjectList) do 
-			if checkstr:find(v) then 
-				return 'Bullying', v
-			end
-		end
-		return nil
-	end
+
 
 
 
