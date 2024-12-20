@@ -8183,7 +8183,7 @@ sendmessage = function(text)
 		end
 		return bypassMessage
 	end
-	--text = text.." | discord.gg/voidware"
+	--text = text.." | discord.gg/"
 	--text = createBypassMessage(text)
 	local textChatService = game:GetService("TextChatService")
 	local replicatedStorageService = game:GetService("ReplicatedStorage")
